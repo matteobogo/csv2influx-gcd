@@ -75,7 +75,7 @@ if __name__ == '__main__':
 
     args = docopt(__doc__, version=csv2influx.__version__)
 
-    path_log_file = path.dirname(path.abspath(__file__)) + '/logs/logging.conf'
+    path_log_file = path.dirname(path.abspath(__file__)) + '/logging.conf'
     logging.config.fileConfig(path_log_file)
     logger = logging.getLogger()
     logger.info("Log Initialized @" + path_log_file)
